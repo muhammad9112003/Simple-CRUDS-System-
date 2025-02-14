@@ -1,0 +1,234 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body {
+    background: url("../images/back.png");
+    background-color: #110909;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: rgba(251, 251, 255, 0.7);
+    text-transform: capitalize;
+    letter-spacing: 1px;
+}
+.cruds {
+    width: 80%;
+    margin: 50px auto;
+}
+@media (max-width:767px) {
+    .cruds table {
+    display: none;
+}
+
+}
+.header {
+    padding: 20px;
+    text-align: center;
+    transition: 0.3s;
+    width: fit-content;
+    margin: auto;
+    text-transform: uppercase;
+}
+.header:hover {
+    color: rgba(251, 251, 255, 1);
+}
+.header h1 {
+    margin-bottom: 0px;
+    font-weight: 900;
+}
+.header p {
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+.input {
+    margin-top: 30px;
+    padding: 20px;
+}
+#title,
+#count,
+#category,
+.create,
+#search,
+.searchTitle ,
+.searchCategory,
+.delete,
+.update,
+button
+    {
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    background-color: #1c0059;
+    outline: none;
+    border: none;
+    font-size: 20px;
+    color: aqua;
+    border-radius: 3px;
+    margin-bottom: 20px;
+}
+@media (max-width:767px) {
+    #search {
+        display: none;
+    }
+}
+.price {
+    display: flex;
+    justify-content:space-evenly;
+    flex-wrap: wrap;
+    margin-left: 20px;
+}
+
+@media (max-width:767px) {
+    .price {
+        flex-direction: column;
+        margin-left: 2%;
+    }
+    
+}
+.price input {
+    width: 15%;
+    text-align: center;
+    padding: 5px;
+    background-color: #0f1dbaab;
+    outline: none;
+    border: none;
+    font-size: 20px;
+    color: aqua;
+    border-radius: 3px;
+    margin-bottom: 20px;
+}
+@media (max-width:767px) {
+    .price input {
+        width: 100%;
+        font-size: 18px;
+    }
+
+}
+small {
+    display: flex;
+    font-size: 20px;
+    background-color: red;
+    width: fit-content;
+    height: 35px;
+    color: #110909;
+    border-radius: 3px;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+@media (max-width:767px) {
+    small {
+        width: 50%;
+        font-size: 18px;
+        margin-bottom: 20px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+}
+small::before {
+    content: "Total :  ";
+}
+.create {
+    cursor: pointer;
+    transition-duration: 0.3s;  
+    border-radius: 15px;
+    margin-left: 25%;
+    background-color: #0dcaf0;
+    color: #110909;
+    width: 50%;
+
+}
+.create:hover,.searchTitle:hover,.searchCategory:hover {
+    color: rgb(6, 6, 104);
+    letter-spacing: 1.3px;
+    background-color: #0dcaf0;
+}
+.searchbtn {
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 20px;
+}
+@media (max-width:767px) {
+    .searchbtn {
+        display: none;
+    }
+}
+.searchTitle {
+    margin-right: 10px;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+.searchCategory {
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.icon {
+    display: flex;
+    justify-content: space-between;
+}
+hr {
+    border : 3px solid #8a8aea;
+}
+@media (max-width:767px) {
+    .icon , hr  {
+        display: none;
+    }
+    
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 20px;
+}
+
+th,
+td {
+    text-align: center;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #7272b5;
+    color: #eee;
+}
+
+th {
+    background-color: #000758;
+    color:#0dcaf0;
+}
+.delete,
+.update {
+    padding: 4px;
+    margin: 0;
+    background-color: transparent;
+    transition-duration: 0.3s;
+    cursor: pointer;
+}
+.delete:hover {
+    background-color: rgb(167, 24, 24);
+    color: #110909;
+}
+.update:hover {
+    background-color: rgb(20, 78, 215);
+    color: rgb(0, 0, 0);
+}
+#deleteAll {
+    width: 200px;
+    margin: auto;
+    margin-top: 20px;
+}
+button {
+    cursor: pointer;
+    color: #110909;
+    background-color: red;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+}
+button:hover {
+    background-color: rgb(144, 8, 8);
+}
